@@ -129,6 +129,9 @@ function crossRefTypeToCslType(crossRefType) {
 }
 
 
-app.listen(7777, () => {
-    console.log('Server running on http://127.0.0.1:7777');
+const PORT = process.env.PORT || 7777; // Use the PORT environment variable or default to 7777 for local development
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
+
+
