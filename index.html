@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citation Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Citation and Bibliography Generator</h1>
+        
+        <!-- Dropdown for selecting citation style -->
+        <label for="citation-style">Select Citation Style:</label>
+        <select id="citation-style"></select>
+
+        <!-- Input for DOI number -->
+        <label for="doi">Enter DOI Number:</label>
+        <input type="text" id="doi" placeholder="e.g., 10.1126/science.1891713">
+
+        <!-- Button to generate citation -->
+        <button id="generate">Generate Citation</button>
+
+        <!-- Display formatted citation and bibliography -->
+        <div id="results">
+            <h3>Formatted Citation:</h3>
+            <div id="citation"></div>
+            <h3>Formatted Bibliography:</h3>
+            <div id="bibliography"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
