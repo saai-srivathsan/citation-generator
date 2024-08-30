@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to load citation styles from server
     async function loadCitationStyles() {
-        const stylesURL = 'http://127.0.0.1:7777/styles'; // URL to fetch list of styles
+        const stylesURL = 'https://citation-generator.onrender.com/styles'; // URL to fetch list of styles
         try {
             const response = await fetch(stylesURL);
             const files = await response.json();
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             // Request the server to generate the citation
-            const response = await fetch(`http://127.0.0.1:7777/generate-citation?doi=${doi}&style=${style}`);
+            const response = await fetch(`https://citation-generator.onrender.com/generate-citation?doi=${doi}&style=${style}`);
             const result = await response.json();
 
             // Display results
